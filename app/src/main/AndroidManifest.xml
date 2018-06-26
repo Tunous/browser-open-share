@@ -8,7 +8,6 @@
 
         <activity
             android:name=".OpenerActivity"
-            android:icon="@drawable/ic_share_to_browser"
             android:label="@string/intent_title"
             android:theme="@android:style/Theme.NoDisplay">
 
