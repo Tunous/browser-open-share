@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
     <string name="app_name">Browser Open-Share</string>
+    <string name="error_no_browser">No browser found.</string>
+    <string name="error_no_link">No link found.</string>
     <string name="intent_title">Open in browser</string>
-    <string name="error_find_link">Couldn\'t find link</string>
-    <string name="warning_no_default_browser">Default browser not found. Opening link in a regular way.</string>
+    <string name="warning_no_browser">No browser found. Opening link in a regular way.</string>
 </resources>
