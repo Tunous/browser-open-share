@@ -2,7 +2,6 @@ package me.thanel.openinbrowser;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -27,13 +26,8 @@ public class OpenerActivity extends Activity {
             // regular text try to convert it to a link by inserting the missing scheme.
             linkToOpen = "http://" + linkToOpen;
         }
-        Uri uri = Uri.parse(linkToOpen);
-        ResolveInfo defaultBrowserInfo = BrowserUtils.getDefaultBrowserInfo(this);
-        if (defaultBrowserInfo != null) {
-            BrowserUtils.openWith(this, uri, defaultBrowserInfo);
-        } else {
-            BrowserUtils.openWithChooser(this, uri);
-        }
+        String defaultBrowserPackageName = BrowserUtils.getDefaultBrowserPackageName(this);
+        BrowserUtils.openWith(this, Uri.parse(linkToOpen), defaultBrowserPackageName);
 
         finish();
     }
