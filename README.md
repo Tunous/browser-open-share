@@ -1,5 +1,7 @@
 # Browser Open-Share
 
+[![CircleCI](https://circleci.com/gh/Tunous/browser-open-share.svg?style=svg)](https://circleci.com/gh/Tunous/browser-open-share)
+
 Android application to open web links in browsers using the share menu.
 
 <!-- [<img src="https://f-droid.org/badge/get-it-on.png"
