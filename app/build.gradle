@@ -17,6 +17,12 @@ android {
     }
 }
 
+configurations {
+    all {
+        exclude module: 'commons-logging'
+    }
+}
+
 dependencies {
     implementation "commons-validator:commons-validator:1.6"
 }
