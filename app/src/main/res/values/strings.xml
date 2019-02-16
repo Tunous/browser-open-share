@@ -4,5 +4,4 @@
     <string name="error_no_browser">No browser found.</string>
     <string name="error_no_link">No link found.</string>
     <string name="intent_title">Open in browser</string>
-    <string name="warning_no_browser">No browser found. Opening link in a regular way.</string>
 </resources>
