@@ -7,7 +7,7 @@ references:
   config_android: &config_android
     working_directory: *workspace
     docker:
-      - image: circleci/android:api-27-alpha
+      - image: circleci/android:api-28-alpha
     environment:
       TERM: dumb
 
