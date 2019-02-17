@@ -17,6 +17,12 @@ android {
     }
 }
 
+configurations {
+    all {
+        exclude module: 'commons-logging'
+    }
+}
+
 dependencies {
-    implementation "org.nibor.autolink:autolink:0.9.0"
+    implementation "commons-validator:commons-validator:1.6"
 }
