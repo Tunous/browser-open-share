@@ -7,7 +7,7 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.widget.Toast;
 
-public class BrowserUtils {
+class BrowserUtils {
     private BrowserUtils() {
         // nothing to do
     }
@@ -17,7 +17,7 @@ public class BrowserUtils {
      *
      * @return Package name of user's default browser or null if user has no default browser.
      */
-    public static String getDefaultBrowserPackageName(Context context) {
+    static String getDefaultBrowserPackageName(Context context) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://"));
         ResolveInfo resolveInfo = context.getPackageManager().resolveActivity(browserIntent,
                 PackageManager.MATCH_DEFAULT_ONLY);
@@ -30,7 +30,7 @@ public class BrowserUtils {
     /**
      * Open the provided {@code uri} using the activity with the specified {@code packageName}.
      */
-    public static void openWith(Context context, Uri uri, String packageName) {
+    static void openWith(Context context, Uri uri, String packageName) {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri)
                 .setPackage(packageName);
         if (intent.resolveActivity(context.getPackageManager()) != null) {

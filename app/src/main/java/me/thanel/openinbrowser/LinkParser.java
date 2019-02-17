@@ -17,7 +17,7 @@ class LinkParser {
         return buildSearchUri(text);
     }
 
-    static Uri buildSearchUri(String searchTerm) {
+    private static Uri buildSearchUri(String searchTerm) {
         return new Uri.Builder()
                 .scheme("https")
                 .authority("google.com")
@@ -26,7 +26,7 @@ class LinkParser {
                 .build();
     }
 
-    static String textWithHttpScheme(String text) {
+    private static String textWithHttpScheme(String text) {
         if (!text.startsWith("http://") && !text.startsWith("https://")) {
             return "http://" + text;
         }

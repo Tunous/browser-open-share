@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.webkit.URLUtil;
 import android.widget.Toast;
-
-import org.apache.commons.validator.routines.UrlValidator;
 
 public class OpenerActivity extends Activity {
 
